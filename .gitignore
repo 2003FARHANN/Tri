@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Machine Learning Models
+*.pkl
+*.h5
+*.joblib
+
+# Environment
+venv/

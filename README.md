@@ -1,257 +1,673 @@
-<h1 align="center">
-🩺 TriNexus | VitaGuard AI
-</h1>
+\# 🩺 TriNexus | VitaGuard AI
 
-<h3 align="center">
-Explainable AI Based Healthcare Decision Support System for Early Diabetes Risk Screening
-</h3>
+
 
 <p align="center">
 
+
+
 <img src="https://img.shields.io/badge/AI-Healthcare-blue">
+
 <img src="https://img.shields.io/badge/ML-XGBoost-green">
+
 <img src="https://img.shields.io/badge/XAI-SHAP-orange">
+
 <img src="https://img.shields.io/badge/API-FastAPI-red">
+
 <img src="https://img.shields.io/badge/Frontend-React.js-purple">
+
+
 
 </p>
 
 
----
-
-<h2>📌 Project Overview</h2>
-
-<strong>VitaGuard AI</strong> is an <strong>Explainable Artificial Intelligence (XAI) based healthcare decision support system</strong> designed for early diabetes risk screening.
-
-The system analyzes patient health information and predicts diabetes risk using Machine Learning models while providing transparent explanations using SHAP (SHapley Additive exPlanations).
-
-The system assists healthcare professionals by identifying possible diabetes risk factors while keeping final medical decisions under qualified healthcare providers.
 
 
----
 
-<h2>🎯 Project Objectives</h2>
+\## 📌 Project Overview
+
+
+
+\*\*VitaGuard AI\*\* is an \*\*Explainable Artificial Intelligence (XAI)-based healthcare decision support system\*\* designed for \*\*early diabetes risk screening\*\*.
+
+
+
+The system analyzes patient health information including:
+
+
+
+\- Age
+
+\- BMI
+
+\- Glucose Level
+
+\- Blood Pressure
+
+\- Lifestyle Factors
+
+\- Health History
+
+
+
+Using Machine Learning models, VitaGuard AI predicts diabetes risk levels and provides transparent explanations using \*\*SHAP (SHapley Additive exPlanations)\*\*.
+
+
+
+The goal of this project is to assist healthcare professionals in identifying diabetes risk at an early stage while ensuring that final medical decisions remain with qualified healthcare providers.
+
+
+
+
+
+\---
+
+
+
+\# 🎯 Project Objectives
+
+
 
 | Objective | Description |
+
 |---|---|
-| Early Detection | Identify diabetes risk before severe complications develop |
-| AI Assistance | Provide ML-based diabetes risk prediction |
-| Explainability | Explain why a prediction was generated |
-| Healthcare Support | Assist doctors and healthcare workers during decision making |
+
+| Early Detection | Identify individuals with potential diabetes risk before complications develop |
+
+| AI Assistance | Provide machine learning-based risk prediction |
+
+| Explainability | Explain why AI generated a specific prediction |
+
+| Healthcare Support | Assist doctors and healthcare workers in decision-making |
 
 
----
 
-<h2>🚀 Key Features</h2>
+
+
+\---
+
+
+
+\# 🚀 Key Features
+
+
+
+
 
 | Feature | Description |
+
 |---|---|
-| 🧠 Risk Prediction | Predict diabetes risk using machine learning models |
-| 📊 Risk Classification | Categorize patients into Low, Medium and High risk |
-| 🔍 Explainable AI | Generate prediction explanations using SHAP |
-| 📈 Feature Importance | Identify important health factors affecting prediction |
-| 🏥 Healthcare Dashboard | Interactive patient analysis dashboard |
-| 🤖 Decision Support | Provide AI-assisted clinical insights |
+
+| 🧠 Diabetes Risk Prediction | Predicts diabetes risk using Machine Learning models |
+
+| 📊 Risk Classification | Categorizes patients into Low, Medium, and High risk groups |
+
+| 🔍 Explainable AI | Uses SHAP to explain AI predictions |
+
+| 📈 Feature Importance | Shows important health factors influencing prediction |
+
+| 🏥 Healthcare Dashboard | Interactive dashboard for patient analysis |
+
+| 🤖 Decision Support System | Helps healthcare professionals make informed decisions |
 
 
----
 
-<h2>🏗️ AI Workflow</h2>
 
-```text
-Patient Health Information
 
-          ↓
+\---
+
+
+
+\# 🏗️ AI Workflow
+
+
+
+
+
+```
+
+Patient Health Data
+
+
+
+     ↓
+
+
 
 Data Preprocessing
 
-          ↓
+
+
+     ↓
+
+
 
 Machine Learning Model
 
-          ↓
+
+
+     ↓
+
+
 
 Diabetes Risk Prediction
 
-          ↓
+
+     ↓
+
+
 
 SHAP Explainable AI
 
-          ↓
+
+      ↓
+
+
 
 Risk Explanation
 
-          ↓
+
+
+      ↓
+
+
 
 Healthcare Dashboard
 
-          ↓
+
+      ↓
+
+
 
 Clinical Decision Support
 
-<h2>🧬 System Architecture</h2>
-                 User Input
+```
 
-                     ↓
 
-        Patient Health Information
 
-                     ↓
 
-            Data Processing Layer
 
-                     ↓
+\---
 
-          Machine Learning Model
 
-              ↙             ↘
 
- Risk Classification     SHAP Explanation
+\# 🧬 System Architecture
 
-              ↘             ↙
 
-          Healthcare Dashboard
 
-                     ↓
 
-        Medical Decision Support
 
-<h2>🛠️ Technology Stack</h2> <h3>🤖 Machine Learning</h3>
-| Technology   | Purpose                       |
-| ------------ | ----------------------------- |
-| Python       | Core programming language     |
-| Scikit-learn | Machine learning development  |
-| XGBoost      | Classification model          |
-| Pandas       | Data processing               |
-| NumPy        | Numerical computation         |
-| SHAP         | Explainable AI implementation |
-<h3>⚙️ Backend</h3>
-| Technology | Purpose                 |
-| ---------- | ----------------------- |
-| FastAPI    | Backend API development |
-| REST API   | AI model communication  |
-<h3>🎨 Frontend</h3>
-| Technology    | Purpose                    |
-| ------------- | -------------------------- |
-| React.js      | Interactive dashboard      |
+```
+
+                   User Input
+
+
+
+                       ↓
+
+
+
+         Patient Health Information
+
+
+
+                       ↓
+
+
+
+             Data Processing Layer
+
+
+
+                       ↓
+
+
+
+           Machine Learning Model
+
+
+
+             ↙                  ↘
+
+
+
+Risk Classification        SHAP Explanation
+
+
+
+             ↘                  ↙
+
+
+
+         Healthcare Dashboard
+
+
+
+                       ↓
+
+
+
+         Medical Decision Support
+
+```
+
+
+
+
+
+\---
+
+
+
+\# 🛠️ Technology Stack
+
+
+
+
+
+\## 🤖 Machine Learning
+
+
+
+| Technology | Purpose |
+
+|---|---|
+
+| Python | Core programming language |
+
+| Scikit-learn | Machine Learning model development |
+
+| XGBoost | Classification model |
+
+| Pandas | Data processing and analysis |
+
+| NumPy | Numerical computation |
+
+| SHAP | Explainable AI implementation |
+
+
+
+
+
+\---
+
+
+
+\## ⚙️ Backend
+
+
+
+| Technology | Purpose |
+
+|---|---|
+
+| FastAPI | Backend API development |
+
+| REST API | Communication between AI model and application |
+
+
+
+
+
+\---
+
+
+
+\## 🎨 Frontend
+
+
+
+| Technology | Purpose |
+
+|---|---|
+
+| React.js | Interactive dashboard development |
+
 | UI Components | Patient data visualization |
-<h3>🔧 Development Tools</h3>
-| Tool             | Usage                             |
-| ---------------- | --------------------------------- |
-| GitHub           | Version control and collaboration |
-| Google Colab     | Model training                    |
-| Jupyter Notebook | Data analysis and experiments     |
-<h2>📊 Diabetes Risk Classification</h2>
-| Risk Level     | Meaning                                  |
-| -------------- | ---------------------------------------- |
-| 🟢 Low Risk    | Few diabetes indicators detected         |
-| 🟡 Medium Risk | Multiple risk factors require monitoring |
-| 🔴 High Risk   | Further medical evaluation recommended   |
-<h2>🔍 Explainable AI using SHAP</h2>
 
-Traditional AI models often behave like black boxes.
 
-VitaGuard AI uses SHAP to explain:
-| Explanation Type     | Description                          |
-| -------------------- | ------------------------------------ |
-| Positive Factors     | Factors increasing diabetes risk     |
-| Negative Factors     | Factors reducing diabetes risk       |
-| Feature Contribution | Percentage influence of each feature |
 
-Prediction:
-High Diabetes Risk
+
+
+\---
+
+
+
+\## 🔧 Development Tools
+
+
+
+| Tool | Usage |
+
+|---|---|
+
+| GitHub | Version control and collaboration |
+
+| Google Colab | Model training and experimentation |
+
+| Jupyter Notebook | Data analysis and testing |
+
+
+
+
+
+\---
+
+
+
+\# 📊 Diabetes Risk Classification
+
+
+
+
+
+| Risk Level | Description |
+
+|---|---|
+
+| 🟢 Low Risk | Patient shows fewer diabetes risk indicators |
+
+| 🟡 Medium Risk | Patient has several risk factors requiring monitoring |
+
+| 🔴 High Risk | Patient requires further medical evaluation |
+
+
+
+
+
+\---
+
+
+
+\# 🔍 Explainable AI (SHAP)
+
+
+
+
+
+Traditional AI models often work like a black box.
+
+
+
+VitaGuard AI uses \*\*SHAP (SHapley Additive exPlanations)\*\* to explain:
+
+
+
+\- Which health factors increased diabetes risk
+
+\- Which factors reduced risk
+
+\- Contribution percentage of each feature
+
+
+
+
+
+Example:
+
+
+
+
+
+```
+
+Prediction: High Diabetes Risk
+
+
+
 
 
 Major Contributing Factors:
 
-High Glucose Level       +35%
 
-High BMI                 +20%
 
-Age                      +15%
+↑ High Glucose Level        +35%
 
-Low Physical Activity    +10%
-<h2>📂 Project Structure</h2>
 
-TriNexus-VitaGuard-AI
+
+↑ High BMI                  +20%
+
+
+
+↑ Age                       +15%
+
+
+
+↓ Physical Activity         +10%
+
+```
+
+
+
+
+
+\---
+
+
+
+\# 📂 Project Structure
+
+
+
+
+
+```
+
+VitaGuard-AI/
+
+
 
 │
-├── ML_Model
-│   ├── preprocessing
-│   ├── training
-│   ├── evaluation
-│   └── explainable_ai
+
+├── AI\_Model/
+
+│   ├── preprocessing.py
+
+│   ├── train\_model.py
+
+│   ├── shap\_analysis.py
+
 │
-├── backend
-│   ├── FastAPI
-│   ├── routes
-│   └── services
+
+├── Backend/
+
+│   ├── FastAPI/
+
+│   ├── API Routes/
+
 │
-├── frontend
-│   ├── React Dashboard
-│   └── UI Components
+
+├── Frontend/
+
+│   ├── React Dashboard/
+
 │
-├── dataset
+
+├── Dataset/
+
 │
-├── docs
+
+├── Documentation/
+
 │
+
 └── README.md
-<h2>⚡ Installation & Setup</h2> <h3>Clone Repository</h3>
 
-git clone https://github.com/yourusername/TriNexus-VitaGuard-AI.git
 
-cd TriNexus-VitaGuard-AI
 
-<h3>Install Dependencies</h3>
+```
+
+
+
+
+
+\---
+
+
+
+\# ⚡ Installation \& Setup
+
+
+
+
+
+\## Clone Repository
+
+
+
+```bash
+
+git clone https://github.com/yourusername/VitaGuard-AI.git
+
+
+
+cd VitaGuard-AI
+
+```
+
+
+
+
+
+\## Install Dependencies
+
+
+
+```bash
+
 pip install -r requirements.txt
-<h3>Run Backend</h3>
+
+```
+
+
+
+
+
+\## Run Backend
+
+
+
+```bash
+
 uvicorn main:app --reload
 
-<h3>Run Frontend</h3>
+```
+
+
+
+
+
+\## Run Frontend
+
+
+
+```bash
+
 npm install
+
+
 
 npm start
 
-<h2>👥 Team Members & Responsibilities</h2>
-| Member              | Branch          | Responsibility                              |
-| ------------------- | --------------- | ------------------------------------------- |
-| Tanvir Hosen Nishat | tanvir-ml       | AI Model Development, Dataset Analysis, XAI |
-| Farhan              | farhan-backend  | Backend API and Integration                 |
-| Siam                | siam-frontend   | Frontend Dashboard Development              |
-| Monima              | monima-docs     | Documentation and Presentation              |
-| Zayed               | Medical Review  | Healthcare Validation                       |
-| Fardin              | Dataset Support | Dataset Organization and Analysis           |
+```
 
-<h2>🔄 GitHub Collaboration Workflow</h2>
-| Step | Action                           |
-| ---- | -------------------------------- |
-| 1    | Pull latest changes from main    |
-| 2    | Work on assigned branch          |
-| 3    | Commit changes                   |
-| 4    | Push own branch                  |
-| 5    | Create Pull Request              |
-| 6    | Code Review                      |
-| 7    | Merge into protected main branch |
 
-<h2>🚀 Future Scope</h2>
-| Improvement                  | Description                       |
-| ---------------------------- | --------------------------------- |
-| Clinical Dataset Integration | Use large healthcare datasets     |
-| Mobile Application           | Patient monitoring application    |
-| IoT Integration              | Wearable health device connection |
-| Real-Time Monitoring         | Continuous health tracking        |
-| Advanced AI Models           | Improve prediction performance    |
-| Healthcare Deployment        | Hospital-level implementation     |
 
-<h2>⚠️ Disclaimer</h2>
-VitaGuard AI is a healthcare decision support system and does not replace professional medical diagnosis.
 
-AI predictions are intended only to assist healthcare professionals.
+
+\---
+
+
+
+\# 👥 Team Members
+
+
+
+
+
+| Name | Responsibility |
+
+|---|---|
+
+| \*\*Tanvir Hosen Nishat\*\* | AI/ML Model Development, Dataset Analysis, Explainable AI |
+
+| \*\*Zayed\*\* | Healthcare Research and Medical Validation |
+
+| \*\*Farhan\*\* | Backend Development and API Integration |
+
+| \*\*Siam\*\* | Frontend Development and Dashboard Design |
+
+| \*\*Monima\*\* | Documentation, UX Design and Presentation |
+
+| \*\*Fardin\*\* | Dataset Support and Data Analysis |
+
+
+
+
+
+\---
+
+
+
+\# 🚀 Future Scope
+
+
+
+
+
+| Future Improvement | Description |
+
+|---|---|
+
+| 🏥 Real Healthcare Dataset | Integration with large-scale clinical datasets |
+
+| 📱 Mobile Application | Patient-side health monitoring application |
+
+| 🌐 IoT Integration | Connection with wearable health devices |
+
+| 📡 Real-Time Monitoring | Continuous patient health tracking |
+
+| 🧠 Advanced AI Models | Improve prediction accuracy |
+
+| ☁️ Healthcare Deployment | Deployment in healthcare organizations |
+
+
+
+
+
+\---
+
+
+
+\# ⚠️ Disclaimer
+
+
+
+
+
+VitaGuard AI is a \*\*healthcare decision support system\*\* and does not replace professional medical diagnosis.
+
+
+
+The prediction generated by this system is intended only to assist healthcare professionals.
+
+
 
 Final medical decisions must always be made by qualified healthcare providers.
 
-<h2>🌟 Vision</h2> <blockquote>
 
-Using Explainable Artificial Intelligence to make early diabetes screening smarter, transparent, and accessible.
 
-</blockquote> ```
+
+
+\---
+
+
+
+\# 🌟 Vision
+
+
+
+
+
+> "Using Explainable Artificial Intelligence to make early diabetes screening smarter, transparent, and accessible."
+

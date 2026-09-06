@@ -130,7 +130,7 @@ Patient Health Data
 
 
 
-&#x20;       ↓
+     ↓
 
 
 
@@ -138,7 +138,7 @@ Data Preprocessing
 
 
 
-&#x20;       ↓
+     ↓
 
 
 
@@ -146,23 +146,21 @@ Machine Learning Model
 
 
 
-&#x20;       ↓
+     ↓
 
 
 
 Diabetes Risk Prediction
 
 
-
-&#x20;       ↓
+     ↓
 
 
 
 SHAP Explainable AI
 
 
-
-&#x20;       ↓
+      ↓
 
 
 
@@ -170,15 +168,14 @@ Risk Explanation
 
 
 
-&#x20;       ↓
+      ↓
 
 
 
 Healthcare Dashboard
 
 
-
-&#x20;       ↓
+      ↓
 
 
 
@@ -202,55 +199,55 @@ Clinical Decision Support
 
 ```
 
-&#x20;                   User Input
+                   User Input
 
 
 
-&#x20;                       ↓
+                       ↓
 
 
 
-&#x20;         Patient Health Information
+         Patient Health Information
 
 
 
-&#x20;                       ↓
+                       ↓
 
 
 
-&#x20;             Data Processing Layer
+             Data Processing Layer
 
 
 
-&#x20;                       ↓
+                       ↓
 
 
 
-&#x20;           Machine Learning Model
+           Machine Learning Model
 
 
 
-&#x20;             ↙                  ↘
+             ↙                  ↘
 
 
 
-&#x20;Risk Classification        SHAP Explanation
+Risk Classification        SHAP Explanation
 
 
 
-&#x20;             ↘                  ↙
+             ↘                  ↙
 
 
 
-&#x20;         Healthcare Dashboard
+         Healthcare Dashboard
 
 
 
-&#x20;                       ↓
+                       ↓
 
 
 
-&#x20;         Medical Decision Support
+         Medical Decision Support
 
 ```
 

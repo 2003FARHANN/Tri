@@ -1,22 +1,70 @@
 {
-    "RandomForest": {
-        "best_params": {
-            "max_depth": 8,
-            "min_samples_split": 2,
-            "n_estimators": 200
+    "metadata": {
+        "project": "TriNexus-VitaGuard-AI",
+        "timestamp": "2026-09-09T01:32:14.617227",
+        "environment": {
+            "python_version": "3.13.15",
+            "scikit_learn_version": "1.9.0",
+            "xgboost_version": "3.4.1"
         },
-        "accuracy": 0.8636,
-        "roc_auc": 0.9485,
-        "f1_score": 0.8037
+        "training_specs": {
+            "features": [
+                "Pregnancies",
+                "Glucose",
+                "BloodPressure",
+                "SkinThickness",
+                "Insulin",
+                "BMI",
+                "DiabetesPedigreeFunction",
+                "Age"
+            ],
+            "target": "Outcome",
+            "cv_strategy": "Stratified 5-Fold Cross-Validation",
+            "imbalance_handling": "scale_pos_weight (XGB) / class_weight='balanced' (RF)",
+            "champion_selection_rule": "Composite (0.5 * ROC-AUC + 0.5 * F1-Score)"
+        },
+        "provenance_hashes": {
+            "train_data_sha256": "c703788a45f2a9cbea43da3ee1a50407cb6134e7587d7d45e2b6ebf101911f69",
+            "test_data_sha256": "120671918b57dfd58da6bdf543b8d2c19ea55ef80147aae2e097aeb51400bffc",
+            "champion_model_sha256": "b83e89714c302d128ba093cc18e0d57d988aef32d3bc9c52035852c6e802bfd5"
+        },
+        "champion_artifact": {
+            "model_name": "XGBoost",
+            "artifact_path": "ML_Model/models\\best_model.pkl"
+        }
     },
-    "XGBoost": {
-        "best_params": {
-            "learning_rate": 0.1,
-            "max_depth": 3,
-            "n_estimators": 100
+    "model_evaluations": {
+        "RandomForest": {
+            "best_params": {
+                "max_depth": 8,
+                "min_samples_split": 5,
+                "n_estimators": 200
+            },
+            "cv_best_roc_auc": 0.9365,
+            "test_metrics": {
+                "accuracy": 0.8701,
+                "roc_auc": 0.9448,
+                "f1_score": 0.8214,
+                "precision": 0.7931,
+                "recall": 0.8519,
+                "composite_score": 0.8831
+            }
         },
-        "accuracy": 0.8766,
-        "roc_auc": 0.9509,
-        "f1_score": 0.8257
+        "XGBoost": {
+            "best_params": {
+                "learning_rate": 0.01,
+                "max_depth": 3,
+                "n_estimators": 200
+            },
+            "cv_best_roc_auc": 0.9459,
+            "test_metrics": {
+                "accuracy": 0.8766,
+                "roc_auc": 0.9519,
+                "f1_score": 0.8348,
+                "precision": 0.7869,
+                "recall": 0.8889,
+                "composite_score": 0.8933
+            }
+        }
     }
 }

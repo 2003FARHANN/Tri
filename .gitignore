@@ -16,5 +16,10 @@ build/
 *.h5
 *.joblib
 
+# Track essential production models and preprocessors
+!ML_Model/models/best_model.pkl
+!ML_Model/models/scaler.pkl
+!ML_Model/models/imputer.pkl
+
 # Environment
 venv/

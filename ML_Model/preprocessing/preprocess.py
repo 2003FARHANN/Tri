@@ -83,8 +83,10 @@ def run_preprocessing(
     scaler_path = os.path.join(artifacts_dir, "scaler.pkl")
     imputer_path = os.path.join(artifacts_dir, "imputer.pkl")
     joblib.dump(scaler, scaler_path)
+    
     joblib.dump(imputer, imputer_path)
     print(f"[+] Saved preprocessing artifacts to {artifacts_dir}/")
-
+    
+# Note: Planning to add RobustScaler for better outlier handling in future
 if __name__ == "__main__":
     run_preprocessing()

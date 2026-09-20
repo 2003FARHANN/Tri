@@ -11,7 +11,6 @@ import pandas as pd
 import joblib
 
 # Set base paths for model directories
-# Set base paths for model directories
 # This points to the "backend" directory
 BACKEND_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -20,6 +19,7 @@ ROOT_DIR = os.path.dirname(BACKEND_DIR)
 
 DIABETES_MODEL_DIR = os.path.join(ROOT_DIR, "ML_Model", "models")
 CARDIO_MODEL_DIR = os.path.join(BACKEND_DIR, "app", "ml_models")
+
 # ----------------- 1. DIABETES MODEL ARTIFACTS -----------------
 DIABETES_MODEL_PATH = os.path.join(DIABETES_MODEL_DIR, "best_model.pkl")
 DIABETES_SCALER_PATH = os.path.join(DIABETES_MODEL_DIR, "scaler.pkl")
@@ -53,8 +53,12 @@ def process_and_predict(input_data: dict) -> dict:
     # 1. Biological zero validation
     zero_invalid_cols = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
     for col in zero_invalid_cols:
-        df[col] = df[col].replace(0, pd.NA)
+        # Replace 0 with np.nan instead of pd.NA for scikit-learn compatibility
+        df[col] = df[col].replace(0, np.nan) 
 
+    # Convert DataFrame to float to prevent 'NAType' error in scikit-learn imputer
+    df = df.astype(float)
+    
     # 2. Imputation
     df_imputed = pd.DataFrame(diabetes_imputer.transform(df), columns=DIABETES_FEATURE_NAMES)
 
